@@ -5,7 +5,7 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 	docker.io \
-	&& pip install nipype nibabel nipy nilearn matplotlib seaborn sklearn \
+	&& pip install nipype nibabel nipy nilearn matplotlib seaborn sklearn "python-igraphi" \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 USER jovyan
