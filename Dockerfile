@@ -4,7 +4,7 @@ MAINTAINER Michele mastrogiovanni <michele.mastrogiovanni@gmail.com>
 USER root
 
 RUN apt-get update && apt-get install -y \
-	docker.io \
+	libopenblas-base libopenblas-dev \
 	&& pip install nipype nibabel nipy nilearn matplotlib seaborn sklearn "python-igraph" bctpy \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
